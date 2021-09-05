@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #2F7866;
+            display: flex;
+            align-items: center;justify-content: center;
+            flex-direction: column;
+        }
+        .sasori, .kankuro{
+            cursor: pointer;
+            display: none;
+        }
+        .sasori{height:200px;}
+        .head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 20vw;
+            color: white;
+        }
+        svg path{fill: white !important;}
+        .ativo {
+            display: block;
+        }
+        .botao .sasori {
+            display: block;
+        }
+        .botao.ativo .kankuro {
+            display: block;
+        }
+        .botao.ativo .sasori {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+
+    <img src="sino.svg" alt="" style="height: 30px;">
+    <h1>ALARME</h1>
+    </div>
+    <div class="botao">
+        <img src="kankuro.png" alt="" class="kankuro">
+        <img src="sasori.jpg" alt="" class="sasori">
+        
+    </div>
+    <script>
+        const botao = document.querySelector(".botao")
+        botao.addEventListener("click", () => {
+            botao.classList.toggle("ativo")
+        })
+    </script>
+</body>
+</html>
