@@ -11,30 +11,33 @@
             display: flex;
             align-items: center;justify-content: center;
             flex-direction: column;
+            height: 100%;
+            font-family: sans-serif;
         }
         .sasori, .kankuro{
             cursor: pointer;
             display: none;
+            width: 60vw;
+            height: auto;
         }
         .sasori{height:200px;}
         .head {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 20vw;
             color: white;
         }
         svg path{fill: white !important;}
         .ativo {
             display: block;
         }
-        .botao .sasori {
-            display: block;
-        }
-        .botao.ativo .kankuro {
+        .botao .kankuro {
             display: block;
         }
         .botao.ativo .sasori {
+            display: block;
+        }
+        .botao.ativo .kankuro {
             display: none;
         }
     </style>
@@ -42,8 +45,8 @@
 <body>
     <div class="head">
 
-    <img src="sino.svg" alt="" style="height: 30px;">
-    <h1>ALARME</h1>
+    <img src="sino.svg" alt="" style="height: 30px; margin-right: 15px  ;">
+    <h1>CLIQUE EM MIM</h1>
     </div>
     <div class="botao">
         <img src="kankuro.png" alt="" class="kankuro">
